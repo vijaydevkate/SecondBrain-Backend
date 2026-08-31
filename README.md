@@ -1,3 +1,3 @@
 # SecondBrain-Backend
 
-clone the repo
+Backend
