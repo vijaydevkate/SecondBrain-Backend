@@ -5,3 +5,5 @@ const userSchema = new Schema({
     password: String
 
 })
+
+const userModel = new Model(userSchema, "User")
