@@ -1,12 +1,22 @@
 import express from 'express';
 import mongoose from 'mongoose';
+import {userModel} from './db.js'
 
 const app = express();
 
-app.post("/api/signup", (req, res) => {
+app.post("/api/signup", async (req, res) => {
    //Zod validation
    const username = req.body.username;
    const password = req.body.password;
+
+   await userModel.create({
+    username: username,
+    password: password
+})
+
+res.status(200).json({
+    message: "User Signed up successfully"
+})
 
 })
 
