@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/vijaydevkate/SecondBrain-Backend#readme",
   "devDependencies": {
-    "@types/express": "github:types/express",
+    "@types/express": "^5.0.6",
     "@types/jasmine": "^6.0.0",
     "jasmine-core": "^7.0.2",
     "karma": "^6.4.4",

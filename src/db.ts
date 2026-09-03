@@ -1,4 +1,4 @@
-import {Model,Schema} from 'mongoose';
+import {model,Schema} from 'mongoose';
 
 const userSchema = new Schema({
     username: {String, unique:true},
@@ -6,4 +6,4 @@ const userSchema = new Schema({
 
 })
 
-const userModel = new Model(userSchema, "User")
+export const userModel = model("User",userSchema)
