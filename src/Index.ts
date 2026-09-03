@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 import {userModel} from './db.js'
 
 const app = express();
+app.use(express.json());
 
 app.post("/api/signup", async (req, res) => {
    //Zod validation
