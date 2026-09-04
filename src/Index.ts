@@ -1,5 +1,4 @@
 import express from 'express';
-import mongoose from 'mongoose';
 import {userModel} from './db.js'
 
 const app = express();
